@@ -1,0 +1,24 @@
+* { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; font-family: "Nunito", Helvetica, Arial, sans-serif; font-size: 16px; }
+
+body { background-color: #0e0f0f; }
+
+.initial { height: 100vh; }
+
+ul.navbar__nav { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; max-width: 960px; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 0 auto; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+ul.navbar__nav li { list-style: none; padding: 15px 10px; display: block; }
+
+.navbar__nav--item { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -ms-flex: 1 2 100px; flex: 1 2 100px; }
+
+.navbar__nav li:nth-child(4) { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; -ms-flex-item-align: center; align-self: center; }
+
+ul.navbar__nav .navbar__nav--item a { text-decoration: none; color: #d7dddd; }
+
+.navbar__nav--item a:hover { border-bottom: 1px solid #ffffff; color: #ffffff; }
+
+main { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; max-width: 960px; margin: 0 auto; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+main .intro__text { color: #d7dddd; padding: 20px 10px; max-width: 580px; }
+
+main .sidebar { background-color: #3d3e40; width: 100vh; }
+/*# sourceMappingURL=main.css.map */

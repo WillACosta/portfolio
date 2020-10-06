@@ -1,0 +1,97 @@
+$dark1: #0e0f0f;
+$dark2: #3d3e40;
+
+$gray1: #7d7f82;
+$gray2: #a3acac;
+
+$light1: #ffffff;
+$light2: #d7dddd;
+
+$max__width: 960px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: $dark1;
+}
+
+.initial {
+    height: 100vh;
+}
+
+ul.navbar__nav {
+    display: flex;
+    flex-direction: row;
+    max-width: $max__width;
+    flex-wrap: wrap;
+
+    margin: 0 auto;
+
+    justify-content: space-between;
+}
+
+ul.navbar__nav li {
+    list-style: none;
+    padding: 15px 10px;
+    display: block;
+}
+
+.navbar__nav--item {
+    display: flex;
+    flex: 1 2 100px;
+}
+
+.navbar__nav li:nth-child(4) {
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+}
+
+ul.navbar__nav .navbar__nav--item a {
+    text-decoration: none;
+    color: $light2;
+}
+
+a.active {
+    border-bottom: 1px solid $light1;
+    color: $light1;
+}
+
+.navbar__nav--item a:hover {
+    border-bottom: 1px solid $light1;
+    color: $light1;
+}
+
+// Main
+
+main {
+    display: flex;
+    flex-direction: row;
+    max-width: $max__width;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+main .intro__text {
+    color: $light2;
+    padding: 20px 10px;
+
+    max-width: 580px;
+    text-align: justify;
+}
+
+main .intro__text cite {
+    font-style: italic;
+}
+
+main .sidebar {
+    background-color: $dark2;
+    height: 100vh;
+
+}
