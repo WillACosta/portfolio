@@ -7,7 +7,10 @@ $gray2: #a3acac;
 $light1: #ffffff;
 $light2: #d7dddd;
 
-$max__width: 960px;
+$gradient1: 120deg, #fdfbfb 0%, #ebedee 100%;
+$gradient2: 120deg, #e6e9f0 0%, #eef1f5 100%;
+
+$max__width: 1200px;
 
 * {
     margin: 0;
@@ -18,27 +21,25 @@ $max__width: 960px;
 }
 
 body {
-    background-color: $dark1;
+    // background-color: $dark1;
 }
 
-.initial {
+.introduce {
     height: 100vh;
+    background: linear-gradient($gradient2);
 }
 
 ul.navbar__nav {
     display: flex;
     flex-direction: row;
-    max-width: $max__width;
+    // max-width: $max__width;
     flex-wrap: wrap;
-
-    margin: 0 auto;
-
     justify-content: space-between;
 }
 
 ul.navbar__nav li {
     list-style: none;
-    padding: 15px 10px;
+    padding: 15px 30px;
     display: block;
 }
 
@@ -47,7 +48,7 @@ ul.navbar__nav li {
     flex: 1 2 100px;
 }
 
-.navbar__nav li:nth-child(4) {
+.navbar__nav li:last-child {
     display: flex;
     justify-content: flex-end;
     align-self: center;
@@ -55,17 +56,36 @@ ul.navbar__nav li {
 
 ul.navbar__nav .navbar__nav--item a {
     text-decoration: none;
-    color: $light2;
+    color: $dark1;
 }
 
 a.active {
-    border-bottom: 1px solid $light1;
-    color: $light1;
+    border-bottom: 1px solid $dark1;
+    color: $dark1;
 }
 
 .navbar__nav--item a:hover {
-    border-bottom: 1px solid $light1;
-    color: $light1;
+    border-bottom: 1px solid $dark1;
+    color: $dark1;
+}
+
+// Menu Barras
+
+.one,
+.two,
+.three {
+    background-color: $dark2;
+    height: 5px;
+    width: 50px;
+    margin: 6px auto;
+
+    transition-duration: 0.3s;
+}
+
+.menu-toggle {
+    width: 40px;
+    height: 30px;
+    margin-right: 20px;
 }
 
 // Main
@@ -76,14 +96,35 @@ main {
     max-width: $max__width;
     margin: 0 auto;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 main .intro__text {
-    color: $light2;
-    padding: 20px 10px;
+    color: $dark2;
+    padding: 40px;
 
     max-width: 580px;
     text-align: justify;
+}
+
+main .intro__text .introduce__title {
+    color: $dark2;
+    line-height: 1.2rem;
+    padding-bottom: 3rem;
+}
+
+main .intro__text .introduce__title::after {
+    content: "";
+    display: block;
+    border: 2px solid $dark2;
+    width: 68px;
+    margin-top: 1.3rem;
+}
+
+main .intro__text .introduce__title h3,
+h4 {
+    font-weight: 700;
+    font-size: 2rem;
 }
 
 main .intro__text cite {
@@ -91,7 +132,29 @@ main .intro__text cite {
 }
 
 main .sidebar {
-    background-color: $dark2;
-    height: 100vh;
+    margin-left: 3rem;
+}
 
+main .sidebar img {
+    width: 300px;
+    border-radius: 100%;
+    display: block;
+    max-width: 100%;
+    margin-left: 3.3rem;
+}
+
+ul.sidebar__items {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    padding-top: 1rem;
+}
+
+ul.sidebar__items li {
+    list-style: none;
+}
+
+.sidebar__items svg {
+    width: 35px;
+    height: 35px;
 }
