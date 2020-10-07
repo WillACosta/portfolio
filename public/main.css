@@ -1,6 +1,6 @@
 * { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; font-family: "Nunito", Helvetica, Arial, sans-serif; font-size: 16px; }
 
-.introduce { height: 100vh; background: linear-gradient(120deg, #e6e9f0 0%, #eef1f5 100%); }
+.introduce { background: linear-gradient(120deg, #e6e9f0 0%, #eef1f5 100%); background-size: cover; background-repeat: no-repeat; background-position: center; }
 
 ul.navbar__nav { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
@@ -20,7 +20,7 @@ a.active { border-bottom: 1px solid #0e0f0f; color: #0e0f0f; }
 
 .menu-toggle { width: 40px; height: 30px; margin-right: 20px; }
 
-main { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; max-width: 1200px; margin: 0 auto; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+main { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; max-width: 1200px; margin: 0 auto; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-bottom: 3rem; }
 
 main .intro__text { color: #3d3e40; padding: 40px; max-width: 580px; text-align: justify; }
 
@@ -41,4 +41,10 @@ ul.sidebar__items { display: -webkit-box; display: -ms-flexbox; display: flex; -
 ul.sidebar__items li { list-style: none; }
 
 .sidebar__items svg { width: 35px; height: 35px; }
+
+.arrow__area { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding: 2rem; }
+
+.arrow__area svg { fill: #0e0f0f; }
+
+.tech { background: #0e0f0f; padding: 5rem; color: #ffffff; }
 /*# sourceMappingURL=main.css.map */

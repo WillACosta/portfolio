@@ -20,13 +20,13 @@ $max__width: 1200px;
     font-size: 16px;
 }
 
-body {
-    // background-color: $dark1;
-}
-
 .introduce {
-    height: 100vh;
+    // height: 100vh;
     background: linear-gradient($gradient2);
+    // background-image: linear-gradient(to right, $light2 0%, $light2 70%, $dark2 70%, $dark2 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 ul.navbar__nav {
@@ -97,6 +97,8 @@ main {
     margin: 0 auto;
     flex-wrap: wrap;
     align-items: center;
+
+    padding-bottom: 3rem;
 }
 
 main .intro__text {
@@ -157,4 +159,22 @@ ul.sidebar__items li {
 .sidebar__items svg {
     width: 35px;
     height: 35px;
+}
+
+.arrow__area {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.arrow__area svg {
+    fill: $dark1;
+}
+
+// Tech
+
+.tech {
+    background: $dark1;
+    padding: 5rem;
+    color: $light1;
 }
