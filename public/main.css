@@ -24,7 +24,7 @@ main { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-or
 
 main .intro__text { color: #3d3e40; padding: 40px; max-width: 580px; text-align: justify; }
 
-main .intro__text .introduce__title { color: #3d3e40; line-height: 1.2rem; padding-bottom: 3rem; }
+main .intro__text .introduce__title { color: #3d3e40; line-height: 2.2rem; padding-bottom: 3rem; text-align: left; }
 
 main .intro__text .introduce__title::after { content: ""; display: block; border: 2px solid #3d3e40; width: 68px; margin-top: 1.3rem; }
 
@@ -32,9 +32,9 @@ main .intro__text .introduce__title h3, h4 { font-weight: 700; font-size: 2rem; 
 
 main .intro__text cite { font-style: italic; }
 
-main .sidebar { margin-left: 3rem; }
+main .sidebar { margin: 0 auto; }
 
-main .sidebar img { width: 300px; border-radius: 100%; display: block; max-width: 100%; margin-left: 3.3rem; }
+main .sidebar img { width: 300px; border-radius: 100%; display: block; max-width: 100%; }
 
 ul.sidebar__items { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-item-align: center; align-self: center; padding-top: 1rem; }
 
@@ -44,7 +44,23 @@ ul.sidebar__items li { list-style: none; }
 
 .arrow__area { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding: 2rem; }
 
-.arrow__area svg { fill: #0e0f0f; }
+.arrow__area svg { fill: #0e0f0f; -webkit-animation: arrowAnimate 2s infinite; animation: arrowAnimate 2s infinite; }
+
+@-webkit-keyframes arrowAnimate { 0% { opacity: 0;
+    -webkit-transform: translate(0px, -20px);
+            transform: translate(0px, -20px); }
+  50% { opacity: 1; }
+  100% { opacity: 0.1;
+    -webkit-transform: translate(0px, 20px);
+            transform: translate(0px, 20px); } }
+
+@keyframes arrowAnimate { 0% { opacity: 0;
+    -webkit-transform: translate(0px, -20px);
+            transform: translate(0px, -20px); }
+  50% { opacity: 1; }
+  100% { opacity: 0.1;
+    -webkit-transform: translate(0px, 20px);
+            transform: translate(0px, 20px); } }
 
 .tech { background: #0e0f0f; padding: 5rem; color: #ffffff; }
 /*# sourceMappingURL=main.css.map */

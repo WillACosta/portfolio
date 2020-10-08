@@ -12,6 +12,9 @@ $gradient2: 120deg, #e6e9f0 0%, #eef1f5 100%;
 
 $max__width: 1200px;
 
+// Importações
+@import "responsive";
+
 * {
     margin: 0;
     padding: 0;
@@ -111,8 +114,9 @@ main .intro__text {
 
 main .intro__text .introduce__title {
     color: $dark2;
-    line-height: 1.2rem;
+    line-height: 2.2rem;
     padding-bottom: 3rem;
+    text-align: left;
 }
 
 main .intro__text .introduce__title::after {
@@ -134,7 +138,7 @@ main .intro__text cite {
 }
 
 main .sidebar {
-    margin-left: 3rem;
+    margin: 0 auto;
 }
 
 main .sidebar img {
@@ -142,7 +146,6 @@ main .sidebar img {
     border-radius: 100%;
     display: block;
     max-width: 100%;
-    margin-left: 3.3rem;
 }
 
 ul.sidebar__items {
@@ -169,6 +172,21 @@ ul.sidebar__items li {
 
 .arrow__area svg {
     fill: $dark1;
+    animation: arrowAnimate 2s infinite;
+}
+
+@keyframes arrowAnimate {
+    0% {
+        opacity: 0;
+        transform: translate(0px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+        transform: translate(0px, 20px);
+    }
 }
 
 // Tech
