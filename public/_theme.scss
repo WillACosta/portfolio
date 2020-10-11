@@ -19,7 +19,7 @@ $gradientDark: linear-gradient(120deg, #3d3e40 0%, #7d7f82 100%);
     --bgGradient: #{$gradientLight};
     --textPrimary: #{$light1};
     --textVariant: #{$dark1};
-    --textDark: #{$dark2};
+    --textDark: #{$dark1};
 }
 
 .inverse {

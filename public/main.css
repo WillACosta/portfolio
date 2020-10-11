@@ -8,7 +8,7 @@
 * { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; font-family: "Nunito", Helvetica, Arial, sans-serif; font-size: 16px; -webkit-transition: all .15s ease; transition: all .15s ease; }
 
 /* Theme Colors */
-:root { --bg: #0e0f0f; --bgGradient: linear-gradient(120deg, #e6e9f0 0%, #eef1f5 100%); --textPrimary: #efefef; --textVariant: #0e0f0f; --textDark: #3d3e40; }
+:root { --bg: #0e0f0f; --bgGradient: linear-gradient(120deg, #e6e9f0 0%, #eef1f5 100%); --textPrimary: #efefef; --textVariant: #0e0f0f; --textDark: #0e0f0f; }
 
 .inverse { --bg: #efefef; --bgGradient: linear-gradient(120deg, #3d3e40 0%, #7d7f82 100%); --textPrimary: #3d3e40; --textVariant: #efefef; --textDark: #d7dddd; }
 
@@ -34,7 +34,7 @@ main .intro__text cite { font-style: italic; }
 
 main .intro__text .introduce__title { color: var(--textDark); line-height: 2.2rem; padding-bottom: 3rem; text-align: left; }
 
-main .intro__text .introduce__title::after { content: ""; display: block; border: 2px solid var(--textDark); width: 68px; margin-top: 1.3rem; }
+main .intro__text .introduce__title::after { content: ""; display: block; border: 2px solid var(--textDark); background: var(--textDark); width: 68px; margin-top: 1.3rem; }
 
 main .intro__text .introduce__title h3, main .intro__text .introduce__title h4 { font-weight: 700; font-size: 2rem; }
 
