@@ -1,3 +1,20 @@
-@media (max-width: 768px){
+@media (max-width: 700px) {
 
+    .tech {
+        padding: 3.23rem !important;
+    }
+
+    .tech .content__text {
+        padding: 0 !important;
+        text-align: justify;
+    }
+
+    .tech .content__text h1{
+        text-align: left;
+    }
+
+    .tech .content {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+    }
 }

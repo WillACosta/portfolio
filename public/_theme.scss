@@ -1,0 +1,31 @@
+/* Theme Colors */
+
+$dark1: #0e0f0f;
+$dark2: #3d3e40;
+
+$gray1: #7d7f82;
+$gray2: #a3acac;
+
+$light1: #efefef;
+$light2: #d7dddd;
+
+$gradientLight: linear-gradient(120deg, #e6e9f0 0%, #eef1f5 100%);
+$gradientDark: linear-gradient(120deg, #3d3e40 0%, #7d7f82 100%);
+
+// background-image: linear-gradient(to right, $light2 0%, $light2 70%, $dark2 70%, $dark2 100%);
+
+:root {
+    --bg: #{$dark1};
+    --bgGradient: #{$gradientLight};
+    --textPrimary: #{$light1};
+    --textVariant: #{$dark1};
+    --textDark: #{$dark2};
+}
+
+.inverse {
+    --bg: #{$light1};
+    --bgGradient: #{$gradientDark};
+    --textPrimary: #{$dark2};
+    --textVariant: #{$light1};
+    --textDark: #{$light2};
+}
