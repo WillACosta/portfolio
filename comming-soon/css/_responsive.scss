@@ -1,0 +1,50 @@
+@media (min-width: $mobile__width + 1) {
+  .container {
+    display: grid;
+    grid-template-columns: 58% 42%;
+    grid-template-rows: 90px 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100vh;
+  }
+
+  .photo img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  header {
+    padding: 4.3rem 2.5rem;
+    align-self: center;
+    justify-self: center;
+    max-width: 506px;
+    width: 100%;
+
+    img {
+      width: 163px !important;
+    }
+  }
+
+  main {
+    text-align: left !important;
+    padding: 60px 30px;
+
+    align-self: center;
+    justify-self: center;
+    max-width: 600px;
+    width: 100%;
+
+    h1 {
+      font-size: 3rem !important;
+    }
+
+    p {
+      font-size: inherit !important;
+    }
+
+    p.about {
+      margin-top: 2.3rem;
+    }
+  }
+}

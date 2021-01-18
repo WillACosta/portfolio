@@ -1,0 +1,68 @@
+@import '../../common/reset';
+@import '../../common/theme';
+@import './responsive';
+
+img {
+  max-width: 100%;
+}
+
+header {
+  padding: 2rem;
+
+  img {
+    width: 100px;
+  }
+}
+
+main {
+  margin-top: 1rem;
+  padding: 2.3rem;
+  text-align: center;
+
+  h1 {
+    font-weight: 600;
+    color: $primary_;
+    margin: 0 auto;
+
+    span {
+      font-weight: 300;
+      color: $primary;
+    }
+  }
+
+  p {
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    font-size: .85rem;
+    color: $primary_;
+  }
+
+  ul {
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+    align-self: center;
+    padding-top: 1rem;
+
+    li {
+      list-style: none;
+    }
+
+    svg {
+      width: 35px;
+      height: 35px;
+      fill: $primary_;
+    }
+  }
+}
+
+.sidebar {
+  margin: 0 auto;
+
+  img {
+    width: 300px;
+    border-radius: 100%;
+    display: block;
+    max-width: 100%;
+  }
+}

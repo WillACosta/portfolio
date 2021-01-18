@@ -1,0 +1,23 @@
+/* Variables */
+$primary: #0e0f0f;
+$primary_: #3d3e40;
+
+$white: #efefef;
+$neutral: #7d7f82;
+
+$gradient: 135deg, #e6e9f0 0%, #eef1f5 100%;
+
+$font: 'Josefin Sans';
+
+$mobile__width: 375px;
+$desktop__width: 1440px;
+
+html {
+  font-family: $font, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background: linear-gradient($gradient);
+  background-repeat: no-repeat;
+}
