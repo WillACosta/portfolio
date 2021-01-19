@@ -1,4 +1,4 @@
-@media (min-width: $mobile__width + 1) {
+@media (min-width: $desktop__width) {
   .container {
     display: grid;
     grid-template-columns: 58% 42%;
@@ -10,7 +10,6 @@
 
   .photo img {
     height: 100vh;
-    width: 100%;
     object-fit: cover;
   }
 
@@ -28,7 +27,7 @@
 
   main {
     text-align: left !important;
-    padding: 60px 30px;
+    padding: 60px 30px !important;
 
     align-self: center;
     justify-self: center;
@@ -45,6 +44,10 @@
 
     p.about {
       margin-top: 2.3rem;
+    }
+
+    ul {
+      justify-content: left !important;
     }
   }
 }

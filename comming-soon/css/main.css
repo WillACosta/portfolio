@@ -1,28 +1,34 @@
+/* Variables */
+html { font-family: "Josefin Sans", Helvetica, Arial, sans-serif; font-size: 16px; }
+
+body { background: linear-gradient(135deg, #e6e9f0 0%, #eef1f5 100%); background-repeat: no-repeat; }
+
 * { padding: 0; margin: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-html { min-height: 100%; height: 100%; }
+@media (min-width: 1440px) { html { min-height: 100%; height: 100%; } }
 
 /* Variables */
 html { font-family: "Josefin Sans", Helvetica, Arial, sans-serif; font-size: 16px; }
 
 body { background: linear-gradient(135deg, #e6e9f0 0%, #eef1f5 100%); background-repeat: no-repeat; }
 
-@media (min-width: 376px) { .container { display: -ms-grid; display: grid; -ms-grid-columns: 58% 42%; grid-template-columns: 58% 42%; -ms-grid-rows: 90px 1fr; grid-template-rows: 90px 1fr; grid-column-gap: 0px; grid-row-gap: 0px; height: 100vh; }
-  .photo img { height: 100vh; width: 100%; -o-object-fit: cover; object-fit: cover; }
+@media (min-width: 1440px) { .container { display: -ms-grid; display: grid; -ms-grid-columns: 58% 42%; grid-template-columns: 58% 42%; -ms-grid-rows: 90px 1fr; grid-template-rows: 90px 1fr; grid-column-gap: 0px; grid-row-gap: 0px; height: 100vh; }
+  .photo img { height: 100vh; -o-object-fit: cover; object-fit: cover; }
   header { padding: 4.3rem 2.5rem; -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; -ms-grid-column-align: center; justify-self: center; max-width: 506px; width: 100%; }
   header img { width: 163px !important; }
-  main { text-align: left !important; padding: 60px 30px; -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; -ms-grid-column-align: center; justify-self: center; max-width: 600px; width: 100%; }
+  main { text-align: left !important; padding: 60px 30px !important; -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; -ms-grid-column-align: center; justify-self: center; max-width: 600px; width: 100%; }
   main h1 { font-size: 3rem !important; }
   main p { font-size: inherit !important; }
-  main p.about { margin-top: 2.3rem; } }
+  main p.about { margin-top: 2.3rem; }
+  main ul { -webkit-box-pack: left !important; -ms-flex-pack: left !important; justify-content: left !important; } }
 
-img { max-width: 100%; }
+img { max-width: 100%; width: 100%; }
 
 header { padding: 2rem; }
 
 header img { width: 100px; }
 
-main { margin-top: 1rem; padding: 2.3rem; text-align: center; }
+main { margin-top: 1rem; padding: 1.5rem 1rem; text-align: center; }
 
 main h1 { font-weight: 600; color: #3d3e40; margin: 0 auto; }
 
