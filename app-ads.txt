@@ -1,0 +1,2 @@
+# app-ads.txt astronomy's app file
+google.com, pub-6094526570648164, DIRECT, f08c47fec0942fa0
