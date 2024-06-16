@@ -8,6 +8,10 @@
   margin: 1.3rem 0;
 }
 
+a {
+  color: var(--textVariant);
+}
+
 @media (max-width: 700px) {
   .tech {
     padding: 3.23rem !important;
@@ -33,7 +37,6 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Nunito", Helvetica, Arial, sans-serif;
-  font-size: 16px;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
 }
@@ -49,7 +52,7 @@
 
 .inverse {
   --bg: #efefef;
-  --bgGradient: linear-gradient(120deg, #3d3e40 0%, #7d7f82 100%);
+  --bgGradient: linear-gradient(120deg, #3d3e40 0%, #111111 100%);
   --textPrimary: #3d3e40;
   --textVariant: #efefef;
   --textDark: #d7dddd;
@@ -135,7 +138,7 @@ main {
 main .intro__text {
   color: var(--textDark);
   padding: 40px;
-  max-width: 580px;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: justify;
 }
