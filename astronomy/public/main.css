@@ -1,0 +1,333 @@
+@charset "UTF-8";
+
+.mt-3 {
+  margin-top: 1.3rem;
+}
+
+.my-3 {
+  margin: 1.3rem 0;
+}
+
+@media (max-width: 700px) {
+  .tech {
+    padding: 3.23rem !important;
+  }
+  .tech .content__text {
+    padding: 0 !important;
+    text-align: justify;
+  }
+  .tech .content__text h1 {
+    text-align: left;
+  }
+  .tech .content {
+    -ms-grid-columns: 1fr !important;
+    grid-template-columns: 1fr !important;
+    gap: 2rem;
+  }
+}
+
+/* Configurações base */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+
+/* Theme Colors */
+:root {
+  --bg: #0e0f0f;
+  --bgGradient: linear-gradient(120deg, #e6e9f0 0%, #eef1f5 100%);
+  --textPrimary: #efefef;
+  --textVariant: #0e0f0f;
+  --textDark: #0e0f0f;
+}
+
+.inverse {
+  --bg: #efefef;
+  --bgGradient: linear-gradient(120deg, #3d3e40 0%, #7d7f82 100%);
+  --textPrimary: #3d3e40;
+  --textVariant: #efefef;
+  --textDark: #d7dddd;
+}
+
+.introduce {
+  background: var(--bgGradient);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+ul.navbar__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+ul.navbar__nav li.navbar__nav--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 2 100px;
+  flex: 1 2 100px;
+  list-style: none;
+  padding: 15px 30px;
+  display: block;
+}
+
+ul.navbar__nav li.navbar__nav--item:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+ul.navbar__nav li.navbar__nav--item a {
+  text-decoration: none;
+  color: var(--textVariant);
+}
+
+ul.navbar__nav li.navbar__nav--item a:hover {
+  border-bottom: 1px solid var(--textVariant);
+  color: var(--textVariant);
+}
+
+ul.navbar__nav li.navbar__nav--item a svg {
+  fill: var(--textDark);
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+main .intro__text {
+  color: var(--textDark);
+  padding: 40px;
+  max-width: 580px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+main .intro__text cite {
+  font-style: italic;
+}
+
+main .intro__text .introduce__title {
+  color: var(--textDark);
+  line-height: 2.2rem;
+  padding-bottom: 3rem;
+  text-align: left;
+}
+
+main .intro__text .introduce__title::after {
+  content: "";
+  display: block;
+  border: 2px solid var(--textDark);
+  background: var(--textDark);
+  width: 68px;
+  margin-top: 1.3rem;
+}
+
+main .intro__text .introduce__title h1,
+main .intro__text .introduce__title h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+main .sidebar {
+  margin: 0 auto;
+}
+
+main .sidebar img {
+  width: 300px;
+  border-radius: 100%;
+  display: block;
+  max-width: 100%;
+}
+
+main .sidebar ul.sidebar__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding-top: 1rem;
+}
+
+main .sidebar ul.sidebar__items li {
+  list-style: none;
+}
+
+main .sidebar ul.sidebar__items svg {
+  width: 35px;
+  height: 35px;
+  fill: var(--textDark);
+}
+
+.arrow__area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.arrow__area svg {
+  fill: var(--textVariant);
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@-webkit-keyframes arrowAnimate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, -20px);
+    transform: translate(0px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+    -webkit-transform: translate(0px, 20px);
+    transform: translate(0px, 20px);
+  }
+}
+
+@keyframes arrowAnimate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, -20px);
+    transform: translate(0px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+    -webkit-transform: translate(0px, 20px);
+    transform: translate(0px, 20px);
+  }
+}
+
+.tech {
+  background: var(--bg);
+  padding: 5rem;
+  color: var(--textPrimary);
+}
+
+.tech .content {
+  max-width: 1200px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr) [2];
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+}
+
+.tech .content img {
+  max-width: 100%;
+  width: 280px;
+}
+
+.tech .content .content__text {
+  padding: 0 3rem;
+}
+
+.tech .content .content__text h1 {
+  font-size: 1.5rem;
+}
+
+.tech .content .content__item ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr) [3];
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 800px;
+  gap: 25px;
+}
+
+.tech .content .content__item ul svg {
+  width: 60px;
+  fill: var(--textPrimary);
+}
+
+.tech .content .content__item ul li {
+  list-style: none;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
